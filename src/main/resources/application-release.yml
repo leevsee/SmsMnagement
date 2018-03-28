@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/social_insurance
+    username: root
+    password: B1a0b1y0
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  port: 9093
+
+
+logging:
+  file: log/sms_mnagement.log
+  level:
+    com: debug
+
+

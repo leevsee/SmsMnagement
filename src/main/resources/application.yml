@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: SMS-Mnagement
+  profiles:
+    active: dev
+    include: msg
+
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+  type-aliases-package: com.bxd.smsmanagement.entity
+  global-config:
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
