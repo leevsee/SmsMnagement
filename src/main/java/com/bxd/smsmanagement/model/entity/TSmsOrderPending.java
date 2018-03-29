@@ -11,7 +11,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author Leeves
- * @since 2018-03-28
+ * @since 2018-03-29
  */
 @TableName("t_sms_order_pending")
 public class TSmsOrderPending extends Model<TSmsOrderPending> {

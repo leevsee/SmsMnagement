@@ -1,9 +1,9 @@
 package com.bxd.smsmanagement.model.entity;
 
-import com.baomidou.mybatisplus.enums.IdType;
-import java.util.Date;
-import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
+import com.baomidou.mybatisplus.annotations.TableId;
+import java.util.Date;
+import com.baomidou.mybatisplus.enums.IdType;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
@@ -14,7 +14,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author Leeves
- * @since 2018-03-28
+ * @since 2018-03-29
  */
 @TableName("t_sms_facilitator")
 public class TSmsFacilitator extends Model<TSmsFacilitator> {
@@ -66,6 +66,11 @@ public class TSmsFacilitator extends Model<TSmsFacilitator> {
      */
     @TableField("Last_Time")
     private Date lastTime;
+    /**
+     * 短信服务商id
+     */
+    @TableField("Facilitator_Type_Id")
+    private Integer facilitatorTypeId;
 
 
     public Long getFacilitatorId() {
@@ -140,6 +145,14 @@ public class TSmsFacilitator extends Model<TSmsFacilitator> {
         this.lastTime = lastTime;
     }
 
+    public Integer getFacilitatorTypeId() {
+        return facilitatorTypeId;
+    }
+
+    public void setFacilitatorTypeId(Integer facilitatorTypeId) {
+        this.facilitatorTypeId = facilitatorTypeId;
+    }
+
     @Override
     protected Serializable pkVal() {
         return this.facilitatorId;
@@ -157,6 +170,7 @@ public class TSmsFacilitator extends Model<TSmsFacilitator> {
         ", createdAccountId=" + createdAccountId +
         ", createdTime=" + createdTime +
         ", lastTime=" + lastTime +
+        ", facilitatorTypeId=" + facilitatorTypeId +
         "}";
     }
 }

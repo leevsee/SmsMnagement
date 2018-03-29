@@ -1,7 +1,7 @@
 package com.bxd.smsmanagement.model.entity;
 
-import java.util.Date;
 import com.baomidou.mybatisplus.annotations.TableField;
+import java.util.Date;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
 import java.io.Serializable;
@@ -12,7 +12,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author Leeves
- * @since 2018-03-28
+ * @since 2018-03-29
  */
 @TableName("t_sms_account_templet")
 public class TSmsAccountTemplet extends Model<TSmsAccountTemplet> {

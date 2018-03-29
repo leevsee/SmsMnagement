@@ -1,6 +1,6 @@
 package com.bxd.smsmanagement.service;
 
-import com.bxd.smsmanagement.model.entity.TSmsMsgRecvr;
+import com.bxd.smsmanagement.model.entity.TSmsFacilitotorType;
 import com.baomidou.mybatisplus.service.IService;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.service.IService;
  * @author Leeves
  * @since 2018-03-29
  */
-public interface ITSmsMsgRecvrService extends IService<TSmsMsgRecvr> {
+public interface ITSmsFacilitotorTypeService extends IService<TSmsFacilitotorType> {
 
 }
